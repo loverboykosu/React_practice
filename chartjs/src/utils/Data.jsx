@@ -31,7 +31,7 @@ const data = {
     ]
   };
 
-export const props = {
+export const Data = {
     options: options,
     data: data
 };

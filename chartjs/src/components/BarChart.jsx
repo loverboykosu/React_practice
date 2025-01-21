@@ -10,7 +10,6 @@ import {
     Legend,
     Title
 } from 'chart.js'
-import props from '../utils/Data.jsx';
 
 
 ChartJS.register(
@@ -21,8 +20,6 @@ ChartJS.register(
     Legend,Title
 );
 const BarChart = (props) => {
-  // const [data,setData] = useState(0);
-
     return(
         <>
             <Bar {...props}></Bar>
