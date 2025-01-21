@@ -1,4 +1,4 @@
-export const options = {
+const options = {
     responsive: true,
     plugins: {
       legend: {
@@ -10,12 +10,12 @@ export const options = {
       }
     }
   };
+
+  const labels = ["1", "2"];
+  const data1 = [12, 11];
+  const data2 = [22, 31];
   
-  const labels = ["January", "February", "March", "April", "May", "June", "July"];
-  const data1 = [12, 11, 14, 52, 14, 32, 36];
-  const data2 = [22, 31, 17, 32, 24, 62, 66];
-  
-export const data = {
+const data = {
     labels, // x軸のラベルの配列
     datasets: [
       {
@@ -30,3 +30,8 @@ export const data = {
       }
     ]
   };
+
+export const props = {
+    options: options,
+    data: data
+};

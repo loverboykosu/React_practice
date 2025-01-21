@@ -1,5 +1,6 @@
 import { Bar } from "react-chartjs-2";
 import React from "react";
+import useState from "react";
 import {
     Chart as ChartJS,
     BarElement,
@@ -9,6 +10,7 @@ import {
     Legend,
     Title
 } from 'chart.js'
+import props from '../utils/Data.jsx';
 
 
 ChartJS.register(
@@ -19,6 +21,7 @@ ChartJS.register(
     Legend,Title
 );
 const BarChart = (props) => {
+  // const [data,setData] = useState(0);
 
     return(
         <>
