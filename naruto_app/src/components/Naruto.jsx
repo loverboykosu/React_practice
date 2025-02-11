@@ -14,12 +14,10 @@ const Naruto = () => {
 
   //fetch characters function
   const fetchCharacters = async (page) => {
-    console.log("fetch : ", page);
     const apiUrl = "https://narutodb.xyz/api/character";
     setIsLoading(true);
     const result = await axios.get(apiUrl, { params: { page } });
     setCharacters(result.data.characters);
-    console.log(characters.length);
     setIsLoading(false);
   };
 
