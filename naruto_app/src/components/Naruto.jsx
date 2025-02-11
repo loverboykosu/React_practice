@@ -1,7 +1,8 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import "../CSS/naruto.css";
 
-const Sample = () => {
+const Naruto = () => {
   const [characters, setCharacters] = useState([]);
   useEffect(() => {
     fetchCharacters();
@@ -17,10 +18,9 @@ const Sample = () => {
 
   return (
     <>
-      {/* <p>{characters[0].name}</p> */}
       <div className="container">
         <main>
-          <div className="card-container">
+          <div className="cards-container">
             {characters.map((character) => {
               return (
                 <div className="card" key={character.id}>
@@ -31,8 +31,12 @@ const Sample = () => {
                         : "dummy.png"
                     }
                     alt="character"
+                    className="card-image"
                   />
-                  <p>{character.name}</p>
+                  <div className="card-content">
+                    <p>Name : {character.name}</p>
+                    <p>{character.jutsu}</p>
+                  </div>
                 </div>
               );
             })}
@@ -43,4 +47,4 @@ const Sample = () => {
   );
 };
 
-export default Sample;
+export default Naruto;

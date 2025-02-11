@@ -1,9 +1,6 @@
-import { useState } from "react";
-import Naruto from "./components/Sample";
+import Naruto from "./components/Naruto";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
       <Naruto />
