@@ -1,13 +1,12 @@
 import { useState } from "react";
-import Sample from "./components/Sample";
-import "./App.css";
+import Naruto from "./components/Sample";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-      <Sample />
+      <Naruto />
     </>
   );
 }
