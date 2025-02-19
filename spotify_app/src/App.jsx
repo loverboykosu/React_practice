@@ -1,11 +1,9 @@
-import Spotify from './components/Spotify.jsx';
+import Spotify from "./components/Spotify.jsx";
 const App = () => {
-
   return (
     <>
-    <Spotify/>
+      <Spotify />
     </>
-
   );
 };
 export default App;
