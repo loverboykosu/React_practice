@@ -1,5 +1,12 @@
+import React from "react";
 const Poke = () => {
-  return <h1>hello</h1>;
+  return (
+    <>
+      <div className="bg-sky-500">
+        <h1 className="text-white">hello</h1>
+      </div>
+    </>
+  );
 };
 
 export default Poke;
